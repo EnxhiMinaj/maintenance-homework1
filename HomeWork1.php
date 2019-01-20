@@ -28,8 +28,12 @@ class HomeWork1
                 $count++;
             }
         }
+        // $fibonaciSeqSerie is the whole sequence
         $fibonaciSeqSerie = $this->fibonacci(($length+$count));
+        // $fibonaciStart is the array from the first element bigger than the input user put
         $fibonaciStart = array_slice($fibonaciSeqSerie, $length);
+        //$arrayPrint is the array starting from the first bigger number user put and till the length user also wanted
+        $arrayPrint = [];
         for($i = 0; $i < $length; $i++){
             $arrayPrint[] = $fibonaciStart[$i];
         }
